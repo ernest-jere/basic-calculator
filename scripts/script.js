@@ -196,7 +196,7 @@ function showResults(){
 }
 
 //add event listeners to keyboard buttons
-bottomDisplay.addEventListener('keydown', function (event) {
+document.addEventListener('keydown', function (event) {
   switch (event.key) {
     case '0':
       inputNumber(document.querySelector('#zero'));
