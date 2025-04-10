@@ -46,6 +46,7 @@ function inputNumber(key) {
   document.querySelectorAll(".operator").forEach(function(sign){
     sign.disabled = false;
   })
+  document.querySelector(".equalTo").disabled = false;
 }
 
 //Add event listeners to operator keys
@@ -79,7 +80,7 @@ function inputOperator(key) {
     }  
     operator = key;
     document.querySelector(".decimal").disabled = false; 
-    document.querySelector(".equalTo").disabled = false; 
+    document.querySelector(".equalTo").disabled = true; 
   }
 }
 
@@ -122,6 +123,7 @@ function InputDecimal(key){
   document.querySelectorAll(".operator").forEach(function(sign){
     sign.disabled = true;
   })
+  document.querySelector(".equalTo").disabled = true;
 }
 
 //add event listerner to cancel buttom
